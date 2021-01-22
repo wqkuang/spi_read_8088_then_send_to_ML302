@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\led.o"
+".\objects\spi.o"
+".\objects\uc8088_spi.o"
+".\objects\wdg.o"
+".\objects\exti.o"
+".\objects\key.o"
+".\objects\core_cm3.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\delay.o"
+".\objects\sys.o"
+".\objects\usart.o"
+".\objects\stm32f10x_it.o"
+".\objects\system_stm32f10x.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_iwdg.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_spi.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_tim.o"
+--strict --scatter ".\Objects\SPI_read_8088.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SPI_read_8088.map" -o .\Objects\SPI_read_8088.axf
